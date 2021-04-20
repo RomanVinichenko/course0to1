@@ -1,0 +1,31 @@
+.resume {
+   text-align: center;
+}
+
+.resume__title {
+   text-align: center;
+   font-size: 60px;
+}
+
+.resume__subtitle {
+   text-align: center;
+}
+
+.resume__avatar {
+   text-align: center;
+}
+
+.resume__description {
+   font-weight: 700;
+   font-size: 24px;
+   font-style: italic;
+}
+
+.resume__link {
+   display: block;
+   text-decoration: none;
+}
+
+.resume__link:not(:last-child) {
+   margin-bottom: 10px;
+}

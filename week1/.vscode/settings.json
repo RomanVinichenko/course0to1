@@ -1,0 +1,7 @@
+{
+  "screencastMode.fontSize": 50,
+  "screencastMode.mouseIndicatorSize": 40,
+"screencastMode.verticalOffset": 18,
+"editor.tabSize": 3,
+"files.autoSave": "onFocusChange"
+}
