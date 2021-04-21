@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+.usa__wrapper,
+.header,
+.footer {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.usa__title1 {
+  font-size: 30px;
+}
+
+.usa__title2 {
+  font-size: 25px;
+}
+
+.descr {
+  font-style: italic;
+  font-weight: 600;
+}
+
+.usa__description {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.usa__list {
+  margin: 15px 0 15px 50px;
+  font-size: 20px;
+}
+
+.usa__list-link {
+  text-decoration: none;
+}
+
+.usa__img1 {
+  display: block;
+  width: 700px;
+  height: 480px;
+  margin: 0 auto;
+}
+
+.usa__img2 {
+  display: block;
+  width: 800px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.usa__img3 {
+  display: block;
+  width: 800px;
+  height: 500px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
