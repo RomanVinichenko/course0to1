@@ -2,23 +2,27 @@
   box-sizing: border-box;
 }
 
-.usa__wrapper,
-.header,
-.footer {
+.container{
   width: 1000px;
   margin: 0 auto;
 }
 
 .title {
   text-align: center;
-  margin: 20px 0;
+  margin-bottom: 20px;
 }
 
-.usa__title1 {
+.usa__title-1 {
   font-size: 30px;
+  position: sticky;
+  background-color: #fff;
+  top: 0; 
+  padding: 20px 0;
+  z-index: 1;
+
 }
 
-.usa__title2 {
+.usa__title-2 {
   font-size: 25px;
 }
 
@@ -41,24 +45,28 @@
   text-decoration: none;
 }
 
-.usa__img1 {
-  display: block;
+.usa__wrapper {
+  overflow: hidden;
+  margin: 0 auto;
   width: 700px;
-  height: 480px;
-  margin: 0 auto;
-}
-
-.usa__img2 {
-  display: block;
-  width: 800px;
-  height: 500px;
-  margin: 0 auto;
-}
-
-.usa__img3 {
-  display: block;
-  width: 800px;
-  height: 500px;
-  margin: 0 auto;
   margin-bottom: 20px;
+}
+
+.usa__wrapper--skew {
+  overflow: visible;
+}
+
+.image {
+  width: 100%;
+  transition: all .5s;
+  object-fit: cover;
+  height: auto;
+}
+
+.image--scale:hover {
+  transform: scale(1.2);
+}
+
+.image--skew:hover {
+  transform: skew(-3deg);
 }
