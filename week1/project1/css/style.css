@@ -3,3 +3,16 @@
 *::before {
   box-sizing: border-box;
 }
+
+.container{
+  max-width: 1195px;
+  margin: 0 auto;
+} 
+
+.wrapper {
+  background-image: url('../images/bg.jpg');
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+}
