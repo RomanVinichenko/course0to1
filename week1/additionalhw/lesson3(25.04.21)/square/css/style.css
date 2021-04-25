@@ -1,0 +1,163 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+.wrapper {
+  min-width: 1200px;
+  background-color: #D8D8D8;
+}
+
+.container {
+  width: 1017px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.object {
+  width: 500px;
+  height: 500px;
+}
+
+.square1,
+.square2,
+.square3,
+.square4 {
+  position: relative;
+}
+
+.square1 {
+  background-color: #3BBCE3;
+  margin: 0 15px 15px 0;
+}
+
+.square2 {
+  background-color: #FFBF47;
+}
+
+.square3 {
+  background-color: #DC91D8;
+  margin-right: 15px;
+}
+
+.square4 {
+  background-color: #8ED78F;
+}
+
+.square__first,
+.square__second,
+.square__third,
+.square__fourth {
+  font-size: 100px;
+  color: #fff;
+  text-align: center;
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  padding: 75px 0;
+}
+
+.square__first::before,
+.square__second::before,
+.square__third::before,
+.square__fourth::before {
+  content: "";
+  position: absolute;
+}
+
+.square__first::before {
+  width: 250px;
+  height: 250px;
+  background-color: #8ED78F;
+  top: -100%;
+  left: -100%;
+  border: 30px solid #fff;
+  transition: all 1s;
+}
+
+.square__second::before {
+  width: 250px;
+  height: 250px;
+  background-color: #DC91D8;
+  border: 30px solid #fff;
+  border-radius: 50%;
+  right: -100%;
+  top: -100%;
+  transition: all 1s;
+}
+
+.square__third::before {
+  width: 200px;
+  height: 200px;
+  background-color: #3BBCE3;
+  border: 20px solid #fff;
+  left: -82%;
+  bottom: -82%;
+  transform: rotate(45deg);
+  transition: all 1s;
+}
+
+.square__fourth::before {
+  bottom: -100%;
+  right: -100%;
+  width: 250px;
+  height: 250px;
+  background-image: url(../images/triangle.svg);
+  transition: all 1s;
+}
+
+.square__first {
+  right: 0;
+  bottom: 0;
+  background-color: #FFBF47;
+}
+
+.square__second {
+  left: 0;
+  bottom: 0;
+  background-color: #3BBCE3;
+}
+
+.square__third {
+  top: 0;
+  right: 0;
+  background-color: #8ED78F;
+}
+
+.square__fourth {
+  top: 0;
+  left: 0;
+  background-color: #DC91D8;
+}
+
+.square__first:hover::before {
+  transform: translateX(250px);
+  transition: all 1s;
+  border-radius: 50%;
+  background-color: #DC91D8;
+}
+
+.square__second:hover::before {
+  transform: translateY(250px);
+  transition: all 1s;
+  border-radius: 0;
+  background-color: #8ED78F;
+}
+
+.square__third:hover::before {
+  transform: rotate(90deg);
+  transition: all 1s;
+  background-color: #FFBF47;
+}
+
+.square__fourth:hover::before {
+  transform: rotate(0deg);
+  transition: all 1s;
+  background-image: url(../images/trirot.svg);
+}
