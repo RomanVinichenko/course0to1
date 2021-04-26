@@ -32,12 +32,16 @@ dd {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 ul[class] {
   list-style: none;
 }
 
 img {
-  min-width: 100%;
+  max-width: 100%;
   display: block;
 }
 
@@ -56,4 +60,27 @@ body {
   max-width: 1190px;
   padding: 0 10px;
   margin: 0 auto;
+}
+
+.header__top-inner {
+  padding-bottom: 29px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.menu__list {
+  display: flex;
+}
+
+.menu__list-item:not(:first-child) {
+  margin-left: 38px;
+}
+
+.menu__list-link {
+  padding: 0 6px 9px;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #373A39;
 }
