@@ -313,14 +313,42 @@ body {
 .portfolio__top {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: center;
   margin-bottom: 100px;
+}
+
+.portfolio__filter-btn {
+  margin-right: 40px;
+}
+
+.portfolio__btn {
+  background-color: transparent;
+  border: none;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 24px;
+  color: #333;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 0 4px 5px;
+  margin-right: 25px;
+  outline-color: #FCBB08;
+}
+
+.mixitup-control-active {
+  border-bottom: 1px solid #FCBB08;
 }
 
 .portfolio__content {
   column-count: 4;
   column-gap: 22px;
+  margin-top: 22px;
 }
+
+.portfolio__content:first-child {
+  margin-top: 0;
+}
+
 
 .portfolio__item {
   margin-bottom: 22px;
@@ -333,7 +361,7 @@ body {
 
 .portfolio__add {
   font-family: Montserrat, sans-serif;
-  display: block; 
+  display: block;
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
@@ -354,7 +382,7 @@ body {
   font-weight: 300;
   font-size: 18px;
   line-height: 36px;
-  font-family: 'Merriweather',serif;
+  font-family: 'Merriweather', serif;
   color: #242121;
 }
 
@@ -363,10 +391,11 @@ body {
   line-height: 32px;
   color: #9E9E9E;
   padding-top: 51px;
-} 
+}
 
 .portfolio__video {
-  background-image: url("..images/video-bg.jpg");
+  background-image: url("../images/video-bg.jpg");
+  height: 324px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -374,4 +403,28 @@ body {
   justify-content: center;
   align-items: center;
   margin-bottom: 165px;
+}
+
+.portfolio__numbers {
+  display: flex;
+  justify-content: space-around;
+}
+
+.portfolio__numbers-item {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 73px;
+  color: #242121;
+  margin-bottom: 9px;
+}
+
+.portfolio__numbers-item span {
+  line-height: 19px;
+  font-size: 14px;
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
+  color: #333333;
 }
