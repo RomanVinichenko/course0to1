@@ -8,8 +8,8 @@ html {
   box-sizing: inherit;
 }
 
-ul[class],
-ol[class] {
+ul,
+ol {
   padding: 0;
 }
 
@@ -21,8 +21,8 @@ h4,
 h5,
 h6,
 p,
-ul[class],
-ol[class],
+ul,
+ol,
 li,
 figure,
 figcaption,
@@ -36,7 +36,7 @@ a {
   text-decoration: none;
 }
 
-ul[class] {
+ul {
   list-style: none;
 }
 
@@ -108,12 +108,13 @@ body {
 
 .menu {
   display: flex;
-  justify-content: center;
 }
 
 .menu__list {
   display: flex;
   align-items: center;
+  margin: 0 auto;
+  padding-right: 60px;
 }
 
 .menu__list-item+.menu__list-item {
@@ -138,23 +139,23 @@ body {
 
 .intro__inner {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   min-height: calc(100vh - 98px);
 }
 
 .intro__title {
+  display: flex;
+  flex-direction: column;
   font-weight: 400;
   font-size: 24px;
   line-height: 28px;
+  margin: auto 0;
   color: #000000;
   text-align: center;
-  padding-top: 240px;
+  padding-bottom: 200px;
 }
 
 .intro__title span {
-  display: block;
   font-size: 200px;
   line-height: 235px;
   font-weight: 700;
@@ -302,4 +303,111 @@ body {
 .wawes__text p {
   margin-bottom: 30px;
   max-width: 507px;
+}
+
+.gallery {
+  padding-bottom: 200px;
+}
+
+.gallery__title {
+  margin-bottom: 212px;
+}
+
+.gallery__filter-btn {
+  margin-bottom: 20px;
+}
+
+.gallery__items {
+  margin-bottom: 50px;
+}
+
+.gallery__items-group {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.gallery__items-group:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.gallery__add-link {
+  display: block;
+  width: 350px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 23px 91px 24px;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 24px;
+  color: #242121;
+  border: 1px solid #C4C4C4;
+  margin-bottom: 200px;
+}
+
+.blockquote {
+  background-color: #F8F8F8;
+  margin-bottom: 200px;
+}
+
+.blockquote__text {
+  padding: 80px 0;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 36px;
+  line-height: 40px;
+  color: #242121;
+  max-width: 575px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.blockquote__text:after {
+  content: "Нэт Янг, первый Чемпион Мира по сёрфингу";
+  position: absolute;
+  bottom: 50px;
+  right: -200px;
+  max-width: 280px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.gallery__video {
+  background-image: url("../images/gallery/video-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px;
+}
+
+.gallery__numbers {
+  display: flex;
+  justify-content: center;
+}
+
+.gallery__number {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 75px;
+  color: #01353E;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.gallery__number:not(:last-child) {
+  margin-right: 100px;
+}
+
+.gallery__number span {
+  display: block;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 18px;
+  color: #242121;
+
 }
