@@ -20,7 +20,12 @@ body {
 .container {
   max-width: 1000px;
   margin: 0 auto;
+  
 }
+
+
+
+
 
 .header {
   min-height: 150px;
@@ -102,6 +107,7 @@ body {
   background-color: #4176FF;
   margin: 0 auto 15px;
   align-items: center;
+  cursor: pointer;
 }
 
 .section__button-title {
@@ -122,3 +128,30 @@ body {
   min-height: 150px;
   padding: 40px 0;
 }
+
+.header,
+.nav,
+.aside,
+.figure,
+.img,
+.main,
+.section,
+.section__button,
+.article,
+.footer {
+  transition: background-color 1s;
+}
+
+.header:hover,
+.nav:hover,
+.aside:hover,
+.figure:hover,
+.img:hover,
+.main:hover,
+.section:hover,
+.section__button:hover,
+.article:hover,
+.footer:hover {
+  background-color: #1976d5;  
+}
+
