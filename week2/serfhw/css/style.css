@@ -89,7 +89,6 @@ body {
 }
 
 .intro {
-  background-image: url("../images/top-bg.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -194,17 +193,15 @@ body {
   padding: 190px 0 200px;
 }
 
-.about__inner {
-  column-count: 2;
-}
-
 .about__text {
-  min-height: 87px;
-  max-width: 480px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.about__text:not(:last-child) {
+.about__text p {
+  max-width: 480px;
   margin-bottom: 30px;
+  margin-right: auto;
 }
 
 .provide {
@@ -270,23 +267,28 @@ body {
   justify-content: space-between;
 }
 
-.provide__info {
+.provide__info-list {
   padding-top: 10px;
 }
 
-.provide__info-item img {
-  display: inline-block;
+.provide__info-item {
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative
 }
 
-.provide__info-item p {
-  display: block;
-  margin-bottom: 20px;
+.provide__info-item img {
+  margin-bottom: 5px;
+  padding-right: 55px;
 }
 
 .provide__info-item span {
-  font-weight: 400;
+  position: absolute;
+  right: 0;
+  top: 0;
   font-size: 24px;
-  color: #242121;
+  font-weight: 400;
+
 }
 
 
@@ -298,7 +300,6 @@ body {
 
 .wawes {
   padding: 200px 0 320px;
-  background-image: url(../images/wawes-serf.jpg);
   background-repeat: no-repeat;
   background-size: 50%;
   background-position: top right;
@@ -323,7 +324,13 @@ body {
 }
 
 .gallery__filter-btn {
+  display: flex;
+  justify-content: left;
   margin-bottom: 20px;
+}
+
+.gallery__filter-btn li:not(:last-child){
+  margin-right: 20px;
 }
 
 .gallery__btn {
@@ -337,7 +344,7 @@ body {
 }
 
 .gallery__btn:not(:last-child) {
-  margin-right: 20px;
+  
 }
 
 .mixitup-control-active {
@@ -421,7 +428,6 @@ body {
 }
 
 .gallery__video {
-  background-image: url("../images/gallery/video-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
