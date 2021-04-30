@@ -451,3 +451,52 @@ body {
   font-style: normal;
   color: #333333;
 }
+
+.slider-blog {
+  background-color: #F8F6FA;
+  padding: 115px 0;
+}
+
+.slider-blog__item-title{
+font-weight: 700;
+font-size: 36px;
+line-height: 52px;
+color: #242121;
+margin-bottom: 10px;
+max-width: 675px;
+display: inline-block;
+}
+
+.slider-blog__item-descr {
+  max-width: 585px;
+}
+
+.slick-dots {
+  display: flex;
+  align-items: center;
+}
+
+.slick-dots li + li{
+  margin-left: 13px;
+}
+
+.slick-dots .slick-active button {
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+transform: translateY(-2px);
+}
+
+.slick-dots button {
+  border: none;
+  padding: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  font-size: 0;
+  opacity: 0.4;
+  background-color: #242121;
+}
+
+
+
