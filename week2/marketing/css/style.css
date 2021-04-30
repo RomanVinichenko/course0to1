@@ -457,14 +457,18 @@ body {
   padding: 115px 0;
 }
 
-.slider-blog__item-title{
-font-weight: 700;
-font-size: 36px;
-line-height: 52px;
-color: #242121;
-margin-bottom: 10px;
-max-width: 675px;
-display: inline-block;
+.slider-blog__item {
+  padding: 190px 0;
+}
+
+.slider-blog__item-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 52px;
+  color: #242121;
+  margin-bottom: 10px;
+  max-width: 675px;
+  display: inline-block;
 }
 
 .slider-blog__item-descr {
@@ -476,7 +480,7 @@ display: inline-block;
   align-items: center;
 }
 
-.slick-dots li + li{
+.slick-dots li+li {
   margin-left: 13px;
 }
 
@@ -484,7 +488,7 @@ display: inline-block;
   width: 10px;
   height: 10px;
   opacity: 1;
-transform: translateY(-2px);
+  transform: translateY(-2px);
 }
 
 .slick-dots button {
@@ -498,5 +502,237 @@ transform: translateY(-2px);
   background-color: #242121;
 }
 
+.slick-prev,
+.slick-next {
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-150%)
+}
 
+.slick-prev {
+  left: -95px;
+}
 
+.slick-next {
+  right: -95px;
+}
+
+.team {
+  padding: 120px 0 130px;
+}
+
+.team__title {
+  margin-bottom: 100px;
+}
+
+.team__items {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.team__name {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 17px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #333333;
+  padding: 35px 0 12px;
+}
+
+.team__position {
+  font-weight: 300;
+  font-size: 12px;
+  color: #373A39;
+  line-height: 16px;
+}
+
+.pricing {
+  background-color: #F6F8FA;
+  padding: 145px 0 160px;
+}
+
+.pricing__title {
+  margin-bottom: 90px;
+}
+
+.pricing__items {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul.pricing__item {
+  background-color: #fff;
+  text-align: center;
+  padding: 24px 25px 50px;
+  width: 370px;
+}
+
+.pricing__item li {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: #242121;
+  margin-bottom: 30px;
+}
+
+.pricing__item .pricing__item-name {
+  text-align-last: left;
+  font-weight: 700;
+  margin-bottom: 8px;
+
+}
+
+.pricing__item .pricing__item-num {
+  font-size: 80px;
+  line-height: 109px;
+  margin-bottom: 50px;
+}
+
+.pricing__item-num sup {
+  font-size: 40px;
+  line-height: 54px;
+  margin-right: 5px;
+}
+
+.pricing__item-link {
+  font-family: 'Montserrat', sans-serif;
+  display: block;
+  margin-top: 70px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1.2px;
+  color: #242121;
+}
+
+.clients {
+  padding: 70px 0 95px;
+}
+
+.clients__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.connection {
+  padding: 145px 0 160px;
+  background-image: url('../images/map.jpg');
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: right 65%;
+}
+
+.form {
+  max-width: 570px;
+}
+
+.connection__title {
+  margin-bottom: 80px;
+}
+
+.form input,
+.form textarea {
+  border: none;
+  border-bottom: 2px solid #373A39;
+  display: block;
+  width: 100%;
+  padding: 16px 4px 16px 4px;
+  margin-bottom: 16px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.form input::placeholder,
+.form textarea::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 3.70909px;
+  color: #B8B8B8;
+  text-transform: uppercase;
+}
+
+.form textarea {
+  min-height: 140px;
+  resize: none;
+}
+
+.form button {
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 13px;
+  padding: 16px 70px;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+  background-color: #242121;
+  cursor: pointer;
+  margin-top: 40px;
+  letter-spacing: 2px;
+}
+
+.footer__top {
+  padding: 110px 10px 60px;
+  background-color: #333;
+  text-align: center;
+}
+
+.footer__logo {
+  display: inline-block;
+  padding: 0 35px 4px;
+  border-bottom: 2px solid #FCBB08;
+  margin-bottom: 70px;
+}
+
+ul.footer__social {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 65px;
+}
+
+.footer__social-list {
+  padding: 0 15px;
+}
+
+.footer__social-link {
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 4px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.footer__contact {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 32px;
+  color: #fff;
+  margin-bottom: 60px;
+}
+
+.footer__contact a {
+  display: block;
+  margin: 10px 0;
+  color: #fff;
+}
+
+.to-top {
+  display: inline-block;
+}
+
+.footer__copy {
+  padding: 40px 10px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #CCCCCC;
+  background-color: #2A2C2B;
+}
