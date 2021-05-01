@@ -493,14 +493,6 @@ body {
   color: #fff;
 }
 
-.slick-prev {
-  display: none;
-}
-
-.slick-arrow {
-  display: none;
-}
-
 .slick-dots {
   display: flex;
   padding-top: 260px;
@@ -604,3 +596,12 @@ body {
   top: 23%;
   padding-left: 5px;
 }
+
+.map {
+  padding: 200px 225px;
+}
+
+.map__img {
+  margin: 0 auto;
+}
+
