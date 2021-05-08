@@ -1,0 +1,14 @@
+%bg {
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about {
+background-image: url();
+@extend %bg
+}
+
+.team {
+  @extend %bg;
+}
